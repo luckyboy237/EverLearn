@@ -18,21 +18,35 @@ function TestsScreen({navigation}) {
          
           <View style={styles.firstRow}>
             <View style={{  display: "flex", flexDirection: "column", justifyContent: "space-between",height:720}}>
-            <Pressable onPress={()=>{navigation.navigate("Question")}}> 
+            <Pressable onPress={()=>{navigation.navigate("Question", {questionName: "Present Simple"})}}> 
               <BigThumbnail  testName={"Present Simple"} numberOfQuestions={"8 Savol"}/>
               </Pressable>
-            <SmallThumbnail  testName={"Present Continous"} numberOfQuestions={"8 Savol"}/>
-            <BigThumbnail  testName={"Advanced Grammar"} numberOfQuestions={"8 Savol"}/>
-            <SmallThumbnail  testName={"Past Simple"} numberOfQuestions={"8 Savol"}/>
+          <Pressable onPress={()=>{navigation.navigate("Question", {questionName: "Present Simple"})}}>
+          <SmallThumbnail  testName={"Present Continous"} numberOfQuestions={"8 Savol"}/>
+          </Pressable >
+          <Pressable  onPress={()=>{navigation.navigate("Question", {questionName: "Present Simple"})}}>
+          <BigThumbnail  testName={"Advanced Grammar"} numberOfQuestions={"8 Savol"}/>
+          </Pressable>
+          <Pressable onPress={()=>{navigation.navigate("Question", {questionName: "Present Simple"})}}>
+          <SmallThumbnail  testName={"Past Simple"} numberOfQuestions={"8 Savol"}/>
+          </Pressable>
            </View>   
           </View>
 
           <View style={styles.secondRow}>
           <View style={{ display: "flex", flexDirection: "column", justifyContent: "space-between",height:720}}>
-          <SmallThumbnail  testName={"Used To"} numberOfQuestions={"8 Savol"}/>
-          <BigThumbnail  testName={"Vocabulary"} numberOfQuestions={"8 Savol"}/>
-          <SmallThumbnail  testName={"Conditionals"} numberOfQuestions={"8 Savol"}/>
-          <BigThumbnail  testName={"Reported Speech"} numberOfQuestions={"8 Savol"}/>
+         <Pressable onPress={()=>{navigation.navigate("Question", {questionName: "Present Simple"})}}>
+         <SmallThumbnail  testName={"Used To"} numberOfQuestions={"8 Savol"}/>
+         </Pressable>
+         <Pressable  onPress={()=>{navigation.navigate("Question", {questionName: "Present Simple"})}}> 
+         <BigThumbnail  testName={"Vocabulary"} numberOfQuestions={"8 Savol"}/>
+         </Pressable>
+         <Pressable  onPress={()=>{navigation.navigate("Question", {questionName: "Present Simple"})}}>
+         <SmallThumbnail  testName={"Conditionals"} numberOfQuestions={"8 Savol"}/>
+         </Pressable>
+         <Pressable  onPress={()=>{navigation.navigate("Question", {questionName: "Present Simple"})}}>
+         <BigThumbnail  testName={"Reported Speech"} numberOfQuestions={"8 Savol"}/>
+         </Pressable>
           </View>
           </View>
         </View>
