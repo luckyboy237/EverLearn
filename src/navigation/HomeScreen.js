@@ -40,7 +40,9 @@ function HomeScreen({navigation}) {
              <Text style={styles.homeSectionHeader}>Mashhur testlar</Text>
              
            <Pressable  onPress={()=>{navigation.navigate("Question",  {questionName: "Present Simple"})}}><QuizItem testName={"Present Simple"} numberOfQuestions={"8 Savol"} iconName={"layers-outline"}/></Pressable>
-            <QuizItem testName={"Conditionals"} numberOfQuestions={"8 Savol"} iconName={"fitness-outline"}/>
+          <Pressable onPress={()=>{navigation.navigate("Question",  {questionName: "Present Simple"})}}>
+          <QuizItem testName={"Conditionals"} numberOfQuestions={"8 Savol"} iconName={"fitness-outline"}/>
+          </Pressable>
           <Pressable onPress={()=>{navigation.navigate("Question", {questionName: "Used To"})}}>
           <QuizItem testName={"Used To"} numberOfQuestions={"8 Savol"} iconName={"hourglass-outline"}/>
           </Pressable>
