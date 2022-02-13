@@ -1,5 +1,5 @@
 export const SpeakingData = {
-    heading: "Speaking Tips 101",
+    heading: "Speaking Tips 1011",
     intro: "There are many ways to improve your English speaking skills. Here are some of them that we think are important:",
     firstTipHeader:"• Imitating (shadowing)",
     firstTipText: "You can learn to speak clearly when you try to copy someone's words, exactly as you hear them.",
