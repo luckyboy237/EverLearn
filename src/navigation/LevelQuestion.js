@@ -92,7 +92,7 @@ return(
                             onPress={()=> selectBtn(answerOption.isCorrect, answerOption.id)} 
                             key={answerOption.id} 
                             style={{width: "100%", height: 60,borderWidth: 2, borderColor: answerOption.id===theID ? "#497CFF" : "black",borderRadius:12, padding: 15, alignItems: 'center', marginBottom: 10 }}>
-                                <Text style={{color: "black"}}>
+                                <Text style={{color: "black", fontSize: 18}}>
                                     {answerOption.answerText}
                                 </Text>
                             </TouchableOpacity>
